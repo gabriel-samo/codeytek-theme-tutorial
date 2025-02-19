@@ -52,6 +52,7 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
   ```php
   get_header();
   ```
+  
 ## Lesson 1 - Theme Setup (Directory Structure):
 
   - Create ```index.php``` file to serve as the main template file.
@@ -63,7 +64,19 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
 ## Lesson 2 - Header and Footer (get_header get_footer):
 
   - Create ```header.php``` file and ```footer.php``` file.
-  
+
   - Seperate the header and footer files from the ```index.php``` file to ```header.php``` and ```footer.php``` files.
 
-    [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+    [Tutorial](https://www.youtube.com/watch?v=cP4FprafrkE&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 3 - Header and Footer (wp_head wp_footer):
+
+  - Modify the ```header.php``` file to get dynamic data:
+    - ```lang="<?php language_attributes(); ?>"``` - This will get the language of the website.
+    - ```<meta charset="<?php bloginfo( 'charset' ); ?>">``` - This will get the character set of the website.
+    - ```<?php wp_head(); ?>``` - This will add the head section of the website i.e. meta tags, scripts, styles etc.
+  
+  - Modify the ```footer.php``` file to get dynamic data:
+    - ```<?php wp_footer(); ?>``` - This will add the footer section of the website i.e. scripts, styles etc.
+
+    [Tutorial](https://www.youtube.com/watch?v=T0_FqVuOte4&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
