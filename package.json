@@ -1,0 +1,15 @@
+{
+  "name": "aquarius",
+  "version": "1.0.0",
+  "description": "This is a theme created with the help of Codeytek Advanced Theme Development course.",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./build/css/tailwind.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
