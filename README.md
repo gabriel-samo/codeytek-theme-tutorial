@@ -55,39 +55,55 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
 
 ## Lesson 1 - Theme Setup (Directory Structure):
 
-  - Create ```index.php``` file to serve as the main template file.
+- Create ```index.php``` file to serve as the main template file.
 
-  - Create ```style.css``` file to serve as the theme details file that would show up in the WordPress admin dashboard.
+- Create ```style.css``` file to serve as the theme details file that would show up in the WordPress admin dashboard.
 
-    [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+  [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
 
 ## Lesson 2 - Header and Footer (get_header get_footer):
 
-  - Create ```header.php``` file and ```footer.php``` file.
+- Create ```header.php``` file and ```footer.php``` file.
 
-  - Seperate the header and footer files from the ```index.php``` file to ```header.php``` and ```footer.php``` files.
+- Seperate the header and footer files from the ```index.php``` file to ```header.php``` and ```footer.php``` files.
 
-    [Tutorial](https://www.youtube.com/watch?v=cP4FprafrkE&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+  [Tutorial](https://www.youtube.com/watch?v=cP4FprafrkE&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
 
 ## Lesson 3 - Header and Footer (wp_head wp_footer):
 
-  - Modify the ```header.php``` file to get dynamic data:
-    - ```lang="<?php language_attributes(); ?>"``` - This will get the language of the website.
-    - ```<meta charset="<?php bloginfo( 'charset' ); ?>">``` - This will get the character set of the website.
-    - ```<?php wp_head(); ?>``` - This will add the head section of the website i.e. meta tags, scripts, styles etc.
+- Modify the ```header.php``` file to get dynamic data:
+  - ```lang="<?php language_attributes(); ?>"``` - This will get the language of the website.
+  - ```<meta charset="<?php bloginfo( 'charset' ); ?>">``` - This will get the character set of the website.
+  - ```<?php wp_head(); ?>``` - This will add the head section of the website i.e. meta tags, scripts, styles etc.
   
-  - Modify the ```footer.php``` file to get dynamic data:
-    - ```<?php wp_footer(); ?>``` - This will add the footer section of the website i.e. scripts, styles etc.
+- Modify the ```footer.php``` file to get dynamic data:
+  - ```<?php wp_footer(); ?>``` - This will add the footer section of the website i.e. scripts, styles etc.
 
-    [Tutorial](https://www.youtube.com/watch?v=T0_FqVuOte4&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+  [Tutorial](https://www.youtube.com/watch?v=T0_FqVuOte4&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
 
 ## Lesson 4 - wp_body_open:
 
-  - Add the ```wp_body_open()``` function to the ```index.php``` file.
-    - This function enables inserting content after the opening body tag.
-  
-  - Add the ```body_class()``` function to the ```index.php``` file.
-    - This function adds wordpress generated class to the body tag.
-    - This function can get parameters to add custom classes to the body tag.
+- Add the ```wp_body_open()``` function to the ```index.php``` file.
+  - This function enables inserting content after the opening body tag.
 
-    [Tutorial](https://www.youtube.com/watch?v=DIyvwx806nw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+- Add the ```body_class()``` function to the ```index.php``` file.
+  - This function adds wordpress generated class to the body tag.
+  - This function can get parameters to add custom classes to the body tag.
+
+  [Tutorial](https://www.youtube.com/watch?v=DIyvwx806nw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 5 - enqueue stylesheet:
+
+- ```wp_enqueue_style()``` function is used to enqueue a stylesheet. It takes 5 parameters:
+  - 1st parameter: The handle name of the stylesheet, should be unique and a string.
+  - 2nd parameter: The URL of the stylesheet, can be a relative path or a full URL. used with ```get_template_directory_uri()``` function to get the URL of the theme.
+  - 3rd parameter: The dependencies of the stylesheet, an array of stylesheet handles that this stylesheet depends on.
+  - 4th parameter: The version of the stylesheet, a string that is used to version the stylesheet.
+    - ```filemtime()``` function is used to get the time in milliseconds since the file was last modified.
+    - can be used to version the stylesheet.
+  - 5th parameter: The media type of the stylesheet, a string that is used to specify the media type of the stylesheet.
+    - ```'all'``` - for all media types.
+    - ```'print'``` - for print media types.
+    - ```'screen'``` - for screen media types.
+
+  [Tutorial](https://www.youtube.com/watch?v=7HfPqzm2mzU&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
