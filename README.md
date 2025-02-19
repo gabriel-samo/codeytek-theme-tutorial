@@ -52,7 +52,7 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
   ```php
   get_header();
   ```
-  
+
 ## Lesson 1 - Theme Setup (Directory Structure):
 
   - Create ```index.php``` file to serve as the main template file.
@@ -80,3 +80,14 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
     - ```<?php wp_footer(); ?>``` - This will add the footer section of the website i.e. scripts, styles etc.
 
     [Tutorial](https://www.youtube.com/watch?v=T0_FqVuOte4&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 4 - wp_body_open:
+
+  - Add the ```wp_body_open()``` function to the ```index.php``` file.
+    - This function enables inserting content after the opening body tag.
+  
+  - Add the ```body_class()``` function to the ```index.php``` file.
+    - This function adds wordpress generated class to the body tag.
+    - This function can get parameters to add custom classes to the body tag.
+
+    [Tutorial](https://www.youtube.com/watch?v=DIyvwx806nw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
