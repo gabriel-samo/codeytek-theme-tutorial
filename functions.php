@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Theme Functions
+ * 
+ * @package Aquarius Theme
+ */
+
 /*
   ==================================================
     Enqueue Scripts and Styles

@@ -52,10 +52,18 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
   ```php
   get_header();
   ```
-  ## Lesson 1 - Theme Setup (Directory Structure):
+## Lesson 1 - Theme Setup (Directory Structure):
 
   - Create ```index.php``` file to serve as the main template file.
 
   - Create ```style.css``` file to serve as the theme details file that would show up in the WordPress admin dashboard.
 
-  [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+    [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 2 - Header and Footer (get_header get_footer):
+
+  - Create ```header.php``` file and ```footer.php``` file.
+  
+  - Seperate the header and footer files from the ```index.php``` file to ```header.php``` and ```footer.php``` files.
+
+    [Tutorial](https://www.youtube.com/watch?v=cK_wvACTGMw&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
