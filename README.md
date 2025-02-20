@@ -129,3 +129,24 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
     - Add a screenshot.png or screenshot.jpg file to the root of the theme folder.
 
   [Tutorial](https://www.youtube.com/watch?v=7HfPqzm2mzU&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 7 + 8 - get_template_part:
+
+- Added a check if the ```wp_body_open``` function exists before calling it to the ```header.php``` file:
+  ```php
+  <?php
+    if ( function_exists( 'wp_body_open' ) ) {
+      wp_body_open(); 
+    }
+  ?>
+  ```
+- Created responsive navigation menu with tailwind css and javascript.
+  - Moved the header content to ```template-parts/header/nav.php``` file.
+  - Added the ```get_template_part``` function to the ```header.php``` file to get the navigation menu.
+    ```php
+    <?php get_template_part('template-parts/header/nav'); ?>
+    ```
+
+  [Tutorial (part 7)](https://www.youtube.com/watch?v=XhMxCF2n2X8&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+  
+  [Tutorial (part 8)](https://www.youtube.com/watch?v=KdrHOgCvR3w&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
