@@ -4,7 +4,7 @@
   "description": "This is a theme created with the help of Codeytek Advanced Theme Development course.",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./build/css/tailwind.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/css/input.css -o ./assets/css/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",

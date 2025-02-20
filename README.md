@@ -107,3 +107,25 @@ This is a theme created with the help of Codeytek Advanced Theme Development cou
     - ```'screen'``` - for screen media types.
 
   [Tutorial](https://www.youtube.com/watch?v=7HfPqzm2mzU&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
+
+## Lesson 6 - enqueue script:
+
+- ```wp_register_script()``` function is used to register a script. It takes 5 parameters:
+  - 1st parameter: The handle name of the script, should be unique and a string.
+  - 2nd parameter: The URL of the script, can be a relative path or a full URL. used with ```get_template_directory_uri()``` function to get the URL of the theme.
+  - 3rd parameter: The dependencies of the script, an array of script handles that this script depends on.
+  - 4th parameter: The version of the script, a string that is used to version the script.
+  - 5th parameter: Whether the script should be enqueued in the footer, a boolean value.
+
+- ```wp_enqueue_script()``` function is used to enqueue a script. It takes 5 parameters:
+  - 1st parameter: The handle name of the script, should be unique and a string.
+  - 2nd parameter: The URL of the script, can be a relative path or a full URL. used with ```get_template_directory_uri()``` function to get the URL of the theme.
+  - 3rd parameter: The dependencies of the script, an array of script handles that this script depends on.
+  - 4th parameter: The version of the script, a string that is used to version the script.
+  - 5th parameter: Whether the script should be enqueued in the footer, a boolean value.
+  - **Note:** This function can take 1 parameter which is the handle name of the registered script. (same for stylesheets)
+
+  - Adding screenshot to the theme:
+    - Add a screenshot.png or screenshot.jpg file to the root of the theme folder.
+
+  [Tutorial](https://www.youtube.com/watch?v=7HfPqzm2mzU&list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h)
